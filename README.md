@@ -4,8 +4,33 @@ This project combines **Supervised** and **Unsupervised Machine Learning** techn
 
 * **Customer Churn Prediction** (Supervised Learning)
 * **Customer Segmentation** (Unsupervised Learning)
+* **Interactive Streamlit Dashboards** for both analyses
 
 Both analyses are performed on real-world datasets and supported by extensive visualizations.
+
+---
+
+## 🚀 Live Dashboards
+
+### Churn Prediction App
+🔗 **Live Demo:** [Coming Soon - Add deployment link here]
+
+```bash
+streamlit run churn_app.py
+```
+- Predict customer churn using 4 trained models (Logistic Regression, KNN, Decision Tree, SVM)
+- Compare model performance with interactive charts
+- Explore the dataset with visualizations
+
+### Customer Segmentation App
+🔗 **Live Demo:** [Coming Soon - Add deployment link here]
+
+```bash
+streamlit run segments_app.py
+```
+- View customer segments identified by K-Means clustering
+- Analyze segment characteristics and distributions
+- Explore cluster analysis visualizations
 
 ---
 
@@ -13,10 +38,14 @@ Both analyses are performed on real-world datasets and supported by extensive vi
 
 ```
 ML-customer-analysis/
+├── churn_app.py              # Streamlit app for churn prediction
+├── segments_app.py           # Streamlit app for customer segmentation
 ├── supervised.ipynb          # Churn prediction (Supervised ML)
 ├── Unsupervised.ipynb        # Customer segmentation (Unsupervised ML)
+├── models/                   # Trained models (.pkl files)
 ├── assets/                   # All generated plots and visuals
-└── Datasets.zip              # Telco + E-commerce datasets
+├── Datasets/                 # Telco + E-commerce datasets
+└── requirements.txt          # Python dependencies
 ```
 
 ---
@@ -121,12 +150,35 @@ Found in `assets/`:
 ## 🛠️ Technologies Used
 
 * Python
-* Pandas
-* NumPy
-* Scikit‑learn
-* Matplotlib
-* Seaborn
+* Pandas / NumPy
+* Scikit-learn
+* Streamlit
+* Plotly
+* Matplotlib / Seaborn
 * SHAP
+* Joblib
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ihabiba/ML-customer-analysis.git
+cd ML-customer-analysis
+
+# Create virtual environment
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+# source .venv/bin/activate  # Mac/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the apps
+streamlit run churn_app.py
+streamlit run segments_app.py
+```
 
 ---
 
