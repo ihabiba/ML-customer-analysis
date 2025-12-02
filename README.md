@@ -13,7 +13,7 @@ Both analyses are performed on real-world datasets and supported by extensive vi
 ## 🚀 Live Dashboards
 
 ### Churn Prediction App
-🔗 **Live Demo:** [Coming Soon - Add deployment link here]
+🔗 **Live Demo:** https://ml-customer-analysis-uadd9gemwynm44izglfeax.streamlit.app/
 
 ```bash
 streamlit run churn_app.py
